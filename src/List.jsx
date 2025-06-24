@@ -36,8 +36,9 @@ const List = ({ array }) => {
           <li
             key={el.id}
             style={{
-              display: "flex",
-              justifyContent: "space-between",
+              display: "grid",
+              gap: "10px",
+              justifyContent: "center",
               alignItems: "center",
               width: "175px",
               border: "3px solid rgb(227 125 125)",
@@ -47,8 +48,9 @@ const List = ({ array }) => {
             {el.el}
             <button
               onClick={() => changeEl(el.id)}
-              style={{ background: "palegoldenrod" }}>
-             	 Кнопка
+              style={{ background: "palegoldenrod" }}
+            >
+              Кнопка
             </button>
           </li>
         ))}
